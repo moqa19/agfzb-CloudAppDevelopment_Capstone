@@ -11,8 +11,12 @@ class CarMake(models.Model):
     description = models.CharField(max_length=1000)
 
     def __str__(self):
+<<<<<<< HEAD
         return "Name: " + self.name + "," + \
                "Description: " + self.description 
+=======
+        return self  
+>>>>>>> 503844a5246934b36e25e3addf59128248af2c63
 
 # <HINT> Create a Car Model model `class CarModel(models.Model):`:
 class CarModel(models.Model):
@@ -39,12 +43,16 @@ class CarModel(models.Model):
     )
 
     def __str__(self):
+<<<<<<< HEAD
         return "Name: " + self.name + "," + \
                "Car Make Name: " + self.CarMake.name + \
                "Car Make Description: " + self.CarMake.description + \
                "Type: " + self.Type + \
                "Year: " + str(self.year.year) + \
                "Dealer ID: " + str(self.dealer_id) 
+=======
+        return self  
+>>>>>>> 503844a5246934b36e25e3addf59128248af2c63
 
 # <HINT> Create a plain Python class `CarDealer` to hold dealer data
 
